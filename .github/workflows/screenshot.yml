@@ -25,7 +25,9 @@ jobs:
       - name: Commit and Push Screenshot
         uses: github-actions-x/commit@v2.9
         with:
-          branch: ${{ github.ref }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Add generated screenshot
+          force-add: true
+          force-push: true
           files: arsolj.png
-          message: Add generated screenshot
       
