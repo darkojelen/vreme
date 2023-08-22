@@ -27,15 +27,14 @@ jobs:
           ls -l *.png
           git status
           git diff
-          git add arsolj.png
 
-      - name: Commit and Push Screenshot
+      - name: Commit and Push Screenshot main
         uses: github-actions-x/commit@v2.9
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          push-branch: 'main'
           commit-message: Add generated screenshot
           force-add: true
           force-push: true
+          push-branch: 'picture'
           files: arsolj.png
       
