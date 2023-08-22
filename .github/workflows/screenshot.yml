@@ -22,6 +22,12 @@ jobs:
       - name: Run Screenshot Script
         run: node captureScreenshots.js
 
+      - name: Check git diff
+        run: |
+          ls -l *.png
+          git status
+          git diff
+
       - name: Commit and Push Screenshot
         uses: github-actions-x/commit@v2.9
         with:
