@@ -27,6 +27,7 @@ jobs:
           ls -l *.png
           git status
           git diff
+          git add arsolj.png
 
       - name: Commit and Push Screenshot
         uses: github-actions-x/commit@v2.9
