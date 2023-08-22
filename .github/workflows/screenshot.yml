@@ -21,4 +21,11 @@ jobs:
 
       - name: Run Screenshot Script
         run: node captureScreenshots.js
+
+      - name: Commit and Push Screenshot
+        uses: github-actions-x/commit@v2.9
+        with:
+          branch: ${{ github.ref }}
+          files: arsolj.png
+          message: Add generated screenshot
       
