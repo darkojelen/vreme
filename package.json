@@ -1,0 +1,23 @@
+{
+  "name": "vreme",
+  "version": "1.0.0",
+  "description": "ARSO vreme Ljubljana",
+  "main": "captureScreenshots.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darkojelen/vreme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darkojelen/vreme/issues"
+  },
+  "homepage": "https://github.com/darkojelen/vreme#readme",
+  "dependencies": {
+          "puppeteer": "^21.1.0"
+  }
+}
+
