@@ -28,7 +28,7 @@ jobs:
           git status
           git diff
 
-      - name: Commit and Push Screenshot main 23.08.2023 17.05
+      - name: Commit and Push Screenshot main 23.08.2023 17.09
         uses: github-actions-x/commit@v2.9
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
