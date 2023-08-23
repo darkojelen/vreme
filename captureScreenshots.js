@@ -23,7 +23,7 @@ console.log('1 Launch page fs');
 	console.log('2 Launch page');
 
   // Set the viewport size to the desired dimensions
-  await page.setViewport({ width: 610, height: 185 });
+  await page.setViewport({ width: 640, height: 185 });
 
 	console.log('3 Launch page');
 
