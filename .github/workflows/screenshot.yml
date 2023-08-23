@@ -36,4 +36,6 @@ jobs:
           force-add: true
           force-push: true
           files: arsolj.png
+          name: darkojelen
+          email: pegaz.int@siol.net
       
