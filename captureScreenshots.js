@@ -30,21 +30,12 @@ console.log('1 Launch page fs');
   await page.goto("http://vreme.arso.gov.si/widget/?width=610px&loc=Ljubljana", {waitUntil: "networkidle0",});
 	console.log('After waitUntil');
 
-	
-//await page.evaluateHandle(`document.querySelector("#meteo-widget-container > div.current-weather > div.temperature-and-weather > span.icon.icon-weather > img")`);
-	
 
-	
-	console.log('After document.querySelector');
+await page.screenshot({ path: "arsolj.png", clip: { x: 0, y: 0, width: 610, height: 185 } });
 
-  await page.screenshot({ path: "arsolj.png" });
-
-
-//const screenshotPath = path.join(process.env.GITHUB_WORKSPACE, 'arsolj.png');
 console.log(" 6screenshotPath: ");
 
 //console.log(screenshotPath);
-//await page.screenshot({ path: screenshotPath });
 
 fs.readdir(__dirname, function (err, files) {
     //handling error
