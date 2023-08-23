@@ -35,6 +35,5 @@ jobs:
           commit-message: Add generated screenshot
           force-add: true
           force-push: true
-          push-branch: 'picture'
           files: arsolj.png
       
