@@ -27,11 +27,11 @@ console.log('1 Launch page fs');
 
 	console.log('3 Launch page');
 
-  await page.goto("http://vreme.arso.gov.si/widget/?width=610px&loc=Ljubljana");
-	console.log('Before document.querySelector');
+  await page.goto("http://vreme.arso.gov.si/widget/?width=610px&loc=Ljubljana", {waitUntil: "networkidle0",});
+	console.log('After waitUntil');
 
 	
-await page.evaluateHandle(`document.querySelector("#meteo-widget-container > div.current-weather > div.temperature-and-weather > span.icon.icon-weather > img")`);
+//await page.evaluateHandle(`document.querySelector("#meteo-widget-container > div.current-weather > div.temperature-and-weather > span.icon.icon-weather > img")`);
 	
 
 	
