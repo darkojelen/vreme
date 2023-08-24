@@ -11,6 +11,7 @@ const puppeteer = require('puppeteer');
 	
 const browser = await puppeteer.launch({
   headless: 'new',
+  timezoneId: 'Europe/Ljubljana' // Set the desired time zone
   // `headless: true` (default) enables old Headless; 
   // `headless: false` enables “headful” mode.
 });	
