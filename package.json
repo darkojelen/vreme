@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/darkojelen/vreme#readme",
   "dependencies": {
-          "puppeteer": "^21.1.0"
+          "puppeteer": "^22.2.0"
   }
 }
 
